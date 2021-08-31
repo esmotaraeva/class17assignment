@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.text-start {
+    text-align-last: left;
+}
+
+.text-end {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ---------- Full Web ------------ */
+.full-web {}
+
+.container {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+/* ---------- Header ------------ */
+.header {
+    background: #000;
+}
+
+.left-header {
+    width: 30%;
+}
+
+.h-img {
+    width: 150px;
+}
+
+.h-img img {
+    padding: 10px;
+    width: 70px;
+}
+
+.right-header {
+    width: 70%;
+    text-align: right;
+}
+
+.right-header ul {}
+
+.right-header ul li {
+    display: inline-block;
+    padding: 30px;
+}
+
+.right-header ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+    border-bottom: 1px solid inherit;
+    font-size: 18px;
+}
+
+.right-header ul li a:hover {
+    border-bottom: 1px solid #fff;
+}
+.right-header ul li{
+    position: relative;
+}
+.right-header ul li ul{
+    position: absolute;
+    top: 139%;
+    left: 0;
+    background: black;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+} 
+.right-header ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 105%;
+}
+.right-header ul li ul li{
+    padding: 10px 41px;
+    transition: .5s;
+}
+.right-header ul li ul li:hover{
+    background: #fff;
+    color: #000;
+}
+.right-header ul li ul li:hover a{
+    color: #000;
+    border-bottom: 1px solid #000;
+    transition: .5s;
+}
+
+
+/* ========== Banner =========== */
+.banner {
+    background: url(img/banner.jpg) no-repeat center top;
+    background-size: cover;
+    padding: 193px 0;
+}
+ 
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 42px;
+}
+
+.banner p {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.banner a {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.btn1 {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: black;
+    border-radius: 9px;
+    margin-right: 13px;
+    transition: .5s;
+    border: 1px solid #000;
+}  
+
+.btn1:hover {
+    background: #fff;
+    color: #000;
+}
+
+.btn2 {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 28px;
+    background: #fff;
+    border-radius: 9px;
+    margin-right: 13px;
+    transition: .5s;
+}
+.btn2:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* ===================== About Section ================ */
+
+.about {
+    background: #87a471;
+    padding: 25px 0;
+}
+ 
+.all-txt {
+    text-align: center;
+}
+
+.all-txt h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    text-transform: uppercase;
+}
+
+.about-left {
+    width: 70%;
+}
+
+.about-left p {
+    margin: 64px 41px 0 0;
+    line-height: 25px;
+    color: #fff;
+}
+
+.about-right {
+    width: 30%;
+}
+
+.a-img {}
+
+.a-img img {}
+
+/* ============= What ============ */
+.what {
+    background: #606a64;
+    padding: 40px 0;
+}
+
+.wh-txt {
+    text-align: center;
+    color: #fff;
+}
+
+.wh-txt h2 {
+    text-align: center;
+    font-size: 34px;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    text-transform: capitalize;
+}
+
+.wh-txt h3 {
+    text-transform: capitalize;
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.wh-txt p {
+    width: 50%;
+    margin: auto;
+}
+
+.item {
+    width: 19%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 44px 30px;
+    float: left;
+    margin-left: 108px;
+    /*! margin: auto; */
+}
+
+.i-img {
+    width: 30%;
+    float: left;
+}
+
+.i-img img {}
+
+.i-txt {
+    width: 70%;
+    float: right;
+    /*! padding: 0 30px 0 0; */
+    box-sizing: border-box;
+}
+
+.i-txt h3 {
+    color: #71869c;
+    margin-bottom: 12px;
+}
+
+.i-txt p {
+    color: #a9b5c1;
+    line-height: 21px;
+}
+
+.what-items {
+    margin-top: 90px;
+}
+
+
+/* ================= leatest work ================== */
+.chack {
+    background: #87a471;
+    padding: 40px 0;
+}
+
+.c-txt {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.c-txt h2 {
+    color: #fff;
+    font-size: 27px;
+}
+
+.c-txt p {
+    color: #d3d8cf;
+    font-size: 18px;
+    margin: 13px 0;
+}
+
+.first-img {}
+
+.no1 {
+    width: 48%;
+    float: left;
+    border: 1px solid #fff;
+}
+
+.no1:last-child {
+    float: right;
+}
+
+
+
+.no1 img {
+    width: 100%;
+}
+
+
+
+.img-txt {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.img-txt h3 {
+    color: #556f82;
+}
+
+.img-txt p {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.last-img {
+    margin-top: 50px;
+}
+
+.no-2 {
+    width: 23%;
+    float: left;
+    margin-left: 28px;
+}
+
+.no-2 img {}
+
+.no-2:first-child {
+    margin: 0;
+}
+
+/* ========== teem section ============= */
+.team-members {
+    background: #5b9776;
+
+    padding: 40px 0;
+}
+
+.team-members h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    /*! margin: 40px; */
+}
+
+.mr {
+    width: 201px;
+    margin: auto;
+    color: #fff;
+    /*! height: 2px; */
+}
+
+.team {
+    width: 30%;
+    float: left;
+    margin-right: 3%;
+}
+
+.member {
+    margin-top: 30px;
+}
+
+.t-img {}
+
+.t-img img {}
+
+.team-menu {}
+
+.team-menu ul {}
+
+.team-menu ul li {
+    display: inline-block;
+}
+
+.team-menu ul li a {
+    color: #fff;
+    font-size: 25px;
+    margin: 10px 10px 0;
+    display: inline-block;
+    transition: .4s;
+}
+ 
+.team-menu ul li a:hover {
+    color: #38433c;
+}
+
+.work-us {
+    background: #606a64;
+    padding: 80px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.work-txt {
+    width: 50%;
+    margin: auto;
+}
+
+.work-txt h2 {
+    font-size: 30px;
+}
+
+.work-txt p {
+    color: #babdbb;
+    margin: 15px 0;
+}
+
+.work-txt a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    background: #00bc9c;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: .4s; 
+}
+.work-txt a:hover{
+    background:#45607a ;
+
+}
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 14px 0;
+}
